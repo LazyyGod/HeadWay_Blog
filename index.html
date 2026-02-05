@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEADWAY BLOG • Фитнес-революция</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+    <!-- Анимированный фон -->
+    <div class="bg-animation">
+        <div class="pulse-circle"></div>
+        <div class="pulse-circle delay-1"></div>
+        <div class="pulse-circle delay-2"></div>
+        <div class="grid-lines"></div>
+    </div>
+
+    <!-- Главный контейнер -->
+    <div class="main-container">
+        <!-- Навигация -->
+        <nav class="main-nav">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <div class="logo-pulse"></div>
+                    <div class="logo-core"></div>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">HEADWAY</span>
+                    <span class="logo-sub">BLOG</span>
+                </div>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#" class="nav-item">
+                    <span class="nav-number">01</span>
+                    <span class="nav-label">Миссия</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-number">02</span>
+                    <span class="nav-label">Эволюция</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-number">03</span>
+                    <span class="nav-label">Преимущества</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-number">04</span>
+                    <span class="nav-label">Сообщество</span>
+                </a>
+            </div>
+            
+            <button class="cta-button nav-cta" id="startNow">
+                <span class="cta-text">ВХОД</span>
+                <div class="cta-arrow">→</div>
+            </button>
+        </nav>
+
+        <!-- Герой-секция -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <span class="tag-pulse"></span>
+                    <span class="tag-text">БЕТА-ТЕСТИРОВАНИЕ</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-line">ТВОЙ ПРОГРЕСС</span>
+                    <span class="title-line accent">ОЦИФРОВАН</span>
+                    <span class="title-line">И УМНОЖЕН</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Headway Blog — не просто дневник. Это кибернетическое расширение твоей воли. 
+                    Система, которая превращает каждую каплю пота в данные, каждое повторение — в статистику, 
+                    а каждую тренировку — в необратимый прогресс.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-value" data-count="247">0</div>
+                        <div class="stat-label">активных атлетов</div>
+                    </div>
+                    <div class="stat-divider">|</div>
+                    <div class="stat">
+                        <div class="stat-value" data-count="18950">0</div>
+                        <div class="stat-label">записей прогресса</div>
+                    </div>
+                    <div class="stat-divider">|</div>
+                    <div class="stat">
+                        <div class="stat-value" data-count="96">0</div>
+                        <div class="stat-label">% эффективности</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="visual-container">
+                    <div class="hologram-card">
+                        <div class="hologram-header">
+                            <div class="hologram-title">LIVE TRACKING</div>
+                        </div>
+                        <div class="hologram-content">
+                            <div class="hologram-data">
+                                <div class="data-row">
+                                    <span class="data-label">СИЛА</span>
+                                    <div class="data-bar">
+                                        <div class="data-fill strength"></div>
+                                    </div>
+                                    <span class="data-value">+18.7%</span>
+                                </div>
+                                <div class="data-row">
+                                    <span class="data-label">ВЫНОСЛИВОСТЬ</span>
+                                    <div class="data-bar">
+                                        <div class="data-fill endurance"></div>
+                                    </div>
+                                    <span class="data-value">+12.3%</span>
+                                </div>
+                                <div class="data-row">
+                                    <span class="data-label">ДИСЦИПЛИНА</span>
+                                    <div class="data-bar">
+                                        <div class="data-fill discipline"></div>
+                                    </div>
+                                    <span class="data-value">+24.1%</span>
+                                </div>
+                            </div>
+                            <div class="hologram-user">
+                                <div class="user-avatar">
+                                    <div class="avatar-ring"><i class="fa-regular fa-user"></i></div>
+                                    <span>YOU</span>
+                                </div>
+                                <div class="user-level">LEVEL 1</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="particles">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция возможностей -->
+        <section class="capabilities">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-number">01</span>
+                    <span class="title-text">БЕСПЛАТНЫЙ <span class="accent">ДОСТУП</span></span>
+                </h2>
+                <p class="section-subtitle">Базовая система отслеживания прогресса</p>
+            </div>
+            
+            <div class="capabilities-grid">
+                <div class="cap-card">
+                    <div class="cap-icon">
+                        <div class="icon-hexagon">
+                            <i class="fas fa-table"></i>
+                        </div>
+                    </div>
+                    <h3 class="cap-title">Умная таблица</h3>
+                    <p class="cap-desc">Интуитивный интерфейс для записи подходов, весов и повторений. Автоматический расчет прогресса.</p>
+                    <div class="cap-tag">БАЗОВЫЙ</div>
+                </div>
+                
+                <div class="cap-card">
+                    <div class="cap-icon">
+                        <div class="icon-hexagon">
+                            <i class="fa-solid fa-chart-column"></i>
+                        </div>
+                    </div>
+                    <h3 class="cap-title">Живые графики</h3>
+                    <p class="cap-desc">Визуализация прогресса в реальном времени. Анализ динамики по всем ключевым показателям.</p>
+                    <div class="cap-tag">БАЗОВЫЙ</div>
+                </div>
+                
+                <div class="cap-card">
+                    <div class="cap-icon">
+                        <div class="icon-hexagon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <h3 class="cap-title">AI-анализ</h3>
+                    <p class="cap-desc">Искусственный интеллект выявляет слабые места и рекомендует фокус для следующих тренировок.</p>
+                    <div class="cap-tag">БАЗОВЫЙ</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция эволюции (Premium) -->
+        <section class="evolution">
+            <div class="evolution-header">
+                <h2 class="section-title">
+                    <span class="title-number">02</span>
+                    <span class="title-text">ЭВОЛЮЦИЯ <span class="accent">PREMIUM</span></span>
+                </h2>
+                <p class="section-subtitle">Переход на следующий уровень осознанности</p>
+            </div>
+            
+            <div class="evolution-cards">
+                <div class="evo-card large">
+                    <div class="evo-glow"></div>
+                    <div class="evo-content">
+                        <div class="evo-badge">НОВОЕ</div>
+                        <h3 class="evo-title">Фотодневник прогресса</h3>
+                        <p class="evo-desc">Еженедельные фотоотчеты с AI-анализом изменений тела. Распознавание мышечных групп и жировой прослойки.</p>
+                        <div class="evo-features">
+                            <span class="evo-feature">3D-модель тела</span>
+                            <span class="evo-feature">Точные замеры</span>
+                            <span class="evo-feature">Прогноз изменений</span>
+                        </div>
+                    </div>
+                    <div class="evo-visual">
+                        <div class="visual-scan">
+                            <div class="scan-line"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="evo-duo">
+                    <div class="evo-card">
+                        <div class="evo-content">
+                            <h3 class="evo-title">Социальный радар</h3>
+                            <p class="evo-desc">Добавляй друзей, создавай группы, соревнуйся в рейтингах. Мотивация через здоровую конкуренцию.</p>
+                            <div class="evo-stats">
+                                <div class="evo-stat">
+                                    <div class="stat-icon">👥</div>
+                                    <div class="stat-info">
+                                        <div class="stat-value">До 50</div>
+                                        <div class="stat-label">друзей</div>
+                                    </div>
+                                </div>
+                                <div class="evo-stat">
+                                    <div class="stat-icon">🏆</div>
+                                    <div class="stat-info">
+                                        <div class="stat-value">15+</div>
+                                        <div class="stat-label">рейтингов</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="evo-card">
+                        <div class="evo-content">
+                            <h3 class="evo-title">Тактический интеллект</h3>
+                            <p class="evo-desc">Персональные рекомендации по тренировкам, питанию и восстановлению на основе твоих данных.</p>
+                            <ul class="evo-list">
+                                <li>Индивидуальные планы</li>
+                                <li>Анализ слабых звеньев</li>
+                                <li>Прогноз результатов</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA секция -->
+        <section class="cta-section">
+            <div class="cta-container">
+                <div class="cta-content">
+                    <h2 class="cta-title">
+                        <span class="cta-line">ВКЛЮЧИСЬ В СИСТЕМУ</span>
+                        <span class="cta-line accent">HEADWAY</span>
+                    </h2>
+                    
+                    <p class="cta-desc">
+                        Это не подписка. Это апгрейд твоего сознания. Переход от случайных тренировок 
+                        к системному прогрессу. От догадок — к данным. От одиночества — к комьюнити.
+                    </p>
+                    
+                    <div class="cta-features">
+                        <div class="cta-feature">
+                            <div class="feature-check">✓</div>
+                            <span>Начни бесплатно — оцени мощь системы</span>
+                        </div>
+                        <div class="cta-feature">
+                            <div class="feature-check">✓</div>
+                            <span>Апгрейдни до Premium в один клик</span>
+                        </div>
+                        <div class="cta-feature">
+                            <div class="feature-check">✓</div>
+                            <span>Стань частью элитного комьюнити</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-buttons">
+                        <button class="btn-primary btn-glow" id="startFree">
+                            <span class="btn-text">ЗАПУСТИТЬ СИСТЕМУ</span>
+                            <span class="btn-subtext">Начать бесплатно</span>
+                        </button>
+                        
+                        <button class="btn-secondary" id="learnMore">
+                            <span class="btn-text">ПОГРУЗИТЬСЯ ГЛУБЖЕ</span>
+                            <span class="btn-subtext">Узнать все детали</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="cta-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="terminal-title">system_console.log</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line"><span class="prompt">>></span> Initializing Headway OS...</div>
+                        <div class="terminal-line"><span class="prompt">>></span> Loading user profile...</div>
+                        <div class="terminal-line"><span class="prompt">>></span> Analyzing fitness data...</div>
+                        <div class="terminal-line"><span class="prompt">>></span> <span class="highlight">System ready. Welcome to the next level.</span></div>
+                        <div class="terminal-line"><span class="prompt">>></span> <span class="blink">_</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Футер -->
+        <footer class="main-footer">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon small">
+                            <div class="logo-core"></div>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">HEADWAY</span>
+                            <span class="logo-sub">BLOG</span>
+                        </div>
+                    </div>
+                    <p class="footer-tagline">
+                        Цифровая эволюция <br>
+                        физического прогресса
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">НАВИГАЦИЯ</h4>
+                    <a href="#" class="footer-link">О системе</a>
+                    <a href="#" class="footer-link">Возможности</a>
+                    <a href="#" class="footer-link">Тарифы</a>
+                    <a href="#" class="footer-link">Сообщество</a>
+                    <a href="#" class="footer-link">Блог</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">ПОДДЕРЖКА</h4>
+                    <a href="#" class="footer-link">Помощь</a>
+                    <a href="#" class="footer-link">FAQ</a>
+                    <a href="#" class="footer-link">Контакты</a>
+                    <a href="#" class="footer-link">Безопасность</a>
+                    <a href="#" class="footer-link">Для тренеров</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">ЮРИДИЧЕСКОЕ</h4>
+                    <a href="#" class="footer-link">Политика конфиденциальности</a>
+                    <a href="#" class="footer-link">Условия использования</a>
+                    <a href="#" class="footer-link">Возврат средств</a>
+                    <a href="#" class="footer-link">Пользовательское соглашение</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2024 HEADWAY BLOG SYSTEM. Все права защищены. 
+                    <span class="copyright-note">Это больше чем приложение. Это образ жизни.</span>
+                </div>
+                <div class="footer-beta">BETA v2.1.1</div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Модальное окно -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <div class="modal-header">
+                <div class="modal-title">АКТИВАЦИЯ СИСТЕМЫ</div>
+                <button class="modal-close" id="modalClose">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-step active">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Создай аккаунт</h3>
+                        <p>Базовый доступ — бесплатно и без ограничений по времени</p>
+                        <div class="modal-form">
+                            <input type="email" placeholder="ТВОЙ EMAIL" class="modal-input">
+                            <input type="password" placeholder="ПАРОЛЬ" class="modal-input">
+                            <button class="modal-btn">ПРОДОЛЖИТЬ →</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Выбери эволюцию</h3>
+                        <p>Premium — полный контроль над своим прогрессом</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Скрипты -->
+    <script src="script.js"></script>
+</body>
+</html>
