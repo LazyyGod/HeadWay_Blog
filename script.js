@@ -72,20 +72,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Эффект параллакса для частиц
-    document.addEventListener('mousemove', function(e) {
-        const particles = document.querySelectorAll('.particle');
-        const mouseX = e.clientX / window.innerWidth;
-        const mouseY = e.clientY / window.innerHeight;
-        
-        particles.forEach((particle, index) => {
-            const speed = (index + 1) * 0.5;
-            const x = (mouseX * speed * 10) + 'px';
-            const y = (mouseY * speed * 10) + 'px';
-            particle.style.transform = `translate(${x}, ${y})`;
-        });
-    });
-    
     // Анимация появления элементов при скролле
     const observerOptions = {
         threshold: 0.1,

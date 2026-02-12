@@ -484,17 +484,6 @@ body {
     position: relative;
 }
 
-.data-fill::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-    animation: shine 2s infinite;
-}
-
 @keyframes shine {
     0% { transform: translateX(-100%); }
     100% { transform: translateX(100%); }
@@ -576,67 +565,6 @@ body {
     background: rgba(255, 255, 255, 0.1);
     padding: 5px 10px;
     border-radius: 12px;
-}
-
-/* Частицы */
-.particles {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-}
-
-.particle {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background: var(--primary);
-    border-radius: 50%;
-    animation: float 5s infinite linear;
-}
-
-.particle:nth-child(1) {
-    top: 20%;
-    left: 10%;
-    animation-delay: 0s;
-}
-.particle:nth-child(2) {
-    top: 60%;
-    left: 80%;
-    animation-delay: 1s;
-    background: var(--secondary);
-}
-.particle:nth-child(3) {
-    top: 40%;
-    left: 40%;
-    animation-delay: 2s;
-    background: var(--accent);
-}
-.particle:nth-child(4) {
-    top: 80%;
-    left: 30%;
-    animation-delay: 3s;
-}
-.particle:nth-child(5) {
-    top: 10%;
-    left: 70%;
-    animation-delay: 4s;
-}
-
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0) translateX(0);
-        opacity: 0;
-    }
-    10%, 90% {
-        opacity: 1;
-    }
-    50% {
-        transform: translateY(-20px) translateX(20px);
-        opacity: 0;
-    }
 }
 
 /* Секции */
