@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Инициализация сервиса пользователей
+    const userService = window.userService;
+    
+    // Обновляем UI при загрузке
+    userService.updateUI();
+    
     // Анимация счетчиков
     const counters = document.querySelectorAll('.stat-value');
     const speed = 200;
@@ -36,9 +42,25 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.overflow = 'auto';
     }
     
-    if (startNowBtn) startNowBtn.addEventListener('click', openModal);
-    if (startFreeBtn) startFreeBtn.addEventListener('click', openModal);
+    // Обновляем обработчики кнопок
+    if (startNowBtn) {
+        startNowBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const user = userService.getCurrentUser();
+            if (user) {
+                userService.showUserMenu();
+            } else {
+                userService.showLoginModal();
+            }
+        });
+    }
+    
+    if (startFreeBtn) startFreeBtn.addEventListener('click', () => {
+        userService.showLoginModal();
+    });
+    
     if (modalClose) modalClose.addEventListener('click', closeModal);
+    
     if (learnMoreBtn) learnMoreBtn.addEventListener('click', () => {
         alert('Подробная информация о системе Headway будет доступна на отдельной странице.');
     });
