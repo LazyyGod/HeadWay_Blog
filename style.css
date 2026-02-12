@@ -1371,6 +1371,7 @@ section {
     font-family: var(--font-mono);
     font-size: 14px;
     transition: all 0.3s;
+    width: 100%;
 }
 
 .modal-input:focus {
@@ -1390,6 +1391,7 @@ section {
     color: var(--bg-dark);
     cursor: pointer;
     transition: all 0.3s;
+    width: 100%;
 }
 
 .modal-btn:hover {
